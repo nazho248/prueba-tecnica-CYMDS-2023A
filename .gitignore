@@ -1,0 +1,14 @@
+#Carpetas
+.idea
+.vscode
+.vscode-test
+.vscode-test-data
+
+#carpetas mac y tales
+.DS_Store
+.env
+
+#archivos de node js
+node_modules
+
+#archivos
