@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head>
+<head >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     ?>
 
 </head>
-<body style="height: 100%" >
+<body class="d-flex flex-column min-vh-100" >
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,8 +24,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link <?php ?> >" aria-current="page" href="index.php">Registrar Municipios y Estudiantes</a>
-                    <a class="nav-link" href="consultas.php">Ver consultas</a>
+                    <a class="nav-link <?php
+                    if (strpos($_SERVER['REQUEST_URI'], 'index.php') !== false) { echo 'active'; } ?> >" aria-current="page" href="index.php">Registrar Municipios y Estudiantes</a>
+                    <a class="nav-link <?php
+                    if (strpos($_SERVER['REQUEST_URI'], 'consultas.php') !== false) {echo 'active';}
+                    ?>" href="consultas.php">Ver consultas</a>
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </div>
             </div>

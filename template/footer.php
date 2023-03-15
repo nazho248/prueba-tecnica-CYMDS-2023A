@@ -4,7 +4,7 @@
 </div>
 
 <!-- align the footer the the bottom of the page -->
-<footer class="bg-success text-center text-white " >
+<footer class="bg-success text-center text-white mt-auto" " >
     <!-- Grid container -->
     <div class="container p-4">
         <section class="mb-4">

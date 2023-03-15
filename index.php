@@ -71,7 +71,7 @@ if(isset($_SESSION['message'])): ?>
     </div>
 
         <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="active" name="active" checked />
+            <input class="form-check-input" type="checkbox" value="1" id="active" name="active" checked />
             <label class="form-check-label">
                 Estudiante Activo
             </label>

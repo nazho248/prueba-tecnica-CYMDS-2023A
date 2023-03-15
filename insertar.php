@@ -13,6 +13,12 @@ $telefono = $_POST['Direccion'];
 $municipio = $_POST['municipio'];
 $active = $_POST['active'];
 
+if($active == ""){
+    $active = 0;
+}else{
+    $active = 1;
+}
+
 //connect to the database
 $pdo = new PDO(SGBD, USER, PASS);
 
